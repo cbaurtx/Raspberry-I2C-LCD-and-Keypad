@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name Raspberry-I2C-LCD-and-Keypad)(type KiCad)(uri /home/iris/Development/Electronics/Raspberry-I2C-LCD-and-Keypad)(options "")(descr ""))
+)
