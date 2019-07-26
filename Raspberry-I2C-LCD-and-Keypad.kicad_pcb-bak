@@ -2,7 +2,7 @@
 
   (general
     (thickness 1.6)
-    (drawings 4)
+    (drawings 5)
     (tracks 468)
     (zones 0)
     (modules 23)
@@ -1668,6 +1668,18 @@
     )
   )
 
+  (dimension 62.23 (width 0.12) (layer F.SilkS)
+    (gr_text "62.23 mm" (at 85.09 100.965 270) (layer F.SilkS)
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (feature1 (pts (xy 86.36 132.08) (xy 85.773579 132.08)))
+    (feature2 (pts (xy 86.36 69.85) (xy 85.773579 69.85)))
+    (crossbar (pts (xy 86.36 69.85) (xy 86.36 132.08)))
+    (arrow1a (pts (xy 86.36 132.08) (xy 85.773579 130.953496)))
+    (arrow1b (pts (xy 86.36 132.08) (xy 86.946421 130.953496)))
+    (arrow2a (pts (xy 86.36 69.85) (xy 85.773579 70.976504)))
+    (arrow2b (pts (xy 86.36 69.85) (xy 86.946421 70.976504)))
+  )
   (gr_line (start 191.4398 69.85) (end 91.44 69.85) (layer Edge.Cuts) (width 0.05) (tstamp 5D3CC3E9))
   (gr_line (start 191.4398 132.08) (end 191.4398 69.85) (layer Edge.Cuts) (width 0.05))
   (gr_line (start 91.44 132.08) (end 191.4398 132.08) (layer Edge.Cuts) (width 0.05))
