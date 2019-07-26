@@ -15,4 +15,5 @@ RasPi pin | Keypad / LCD Signal|Description
 
 You can populate the PCB partially if only the LCD display or the keypad
 controller is needed.
-Created using information from: https://5volt-junkie.net/i2c-keypad/  
+
+Conceived using information from: https://5volt-junkie.net/i2c-keypad/  
