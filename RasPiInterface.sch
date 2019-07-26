@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:Raspberry-I2C-LCD-and-Keypad-cache
-EELAYER 29 0
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -24,17 +24,6 @@ Text HLabel 7000 3650 2    50   Input ~ 0
 SCL
 Text HLabel 7000 3850 2    50   Input ~ 0
 ~iNT
-$Comp
-L Regulator_Linear:AP2204R-3.3 U1
-U 1 1 5D3A133D
-P 5800 3200
-F 0 "U1" H 5800 3442 50  0000 C CNN
-F 1 "AP2204R-3.3" H 5800 3351 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-89-3" H 5800 3425 50  0001 C CNN
-F 3 "https://www.diodes.com/assets/Datasheets/AP2204.pdf" H 5800 3200 50  0001 C CNN
-	1    5800 3200
-	1    0    0    -1  
-$EndComp
 Text HLabel 7000 4100 2    50   Input ~ 0
 GND
 Wire Wire Line
@@ -50,7 +39,7 @@ U 1 1 5D3A2BB9
 P 3600 3500
 F 0 "J1" H 3518 3917 50  0000 C CNN
 F 1 "Conn_01x06" H 3518 3826 50  0000 C CNN
-F 2 "Connector_PinHeader_1.27mm:PinHeader_1x06_P1.27mm_Vertical" H 3600 3500 50  0001 C CNN
+F 2 "Connector_PinHeader_1.27mm:PinHeader_1x06_P1.27mm_Horizontal" H 3600 3500 50  0001 C CNN
 F 3 "~" H 3600 3500 50  0001 C CNN
 	1    3600 3500
 	-1   0    0    -1  
@@ -89,23 +78,23 @@ Wire Wire Line
 Wire Wire Line
 	3800 3700 4650 3700
 $Comp
-L Device:C C1
+L Device:C C3
 U 1 1 5D3A75FF
 P 5250 3400
-F 0 "C1" H 5365 3446 50  0000 L CNN
+F 0 "C3" H 5365 3446 50  0000 L CNN
 F 1 "100n" H 5365 3355 50  0000 L CNN
-F 2 "" H 5288 3250 50  0001 C CNN
+F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm" H 5288 3250 50  0001 C CNN
 F 3 "~" H 5250 3400 50  0001 C CNN
 	1    5250 3400
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C2
+L Device:C C4
 U 1 1 5D3A9385
 P 6250 3400
-F 0 "C2" H 6365 3446 50  0000 L CNN
-F 1 "100n" H 6365 3355 50  0000 L CNN
-F 2 "" H 6288 3250 50  0001 C CNN
+F 0 "C4" H 6400 3500 50  0000 L CNN
+F 1 "100n" H 6400 3400 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm" H 6288 3250 50  0001 C CNN
 F 3 "~" H 6250 3400 50  0001 C CNN
 	1    6250 3400
 	1    0    0    -1  
@@ -157,4 +146,15 @@ Wire Wire Line
 	5800 3550 6250 3550
 Text Notes 6000 4450 0    50   ~ 0
 SDG denotes shield for i2c bus
+$Comp
+L Regulator_Linear:AP2204R-3.3 U3
+U 1 1 5D3E59A3
+P 5800 3200
+F 0 "U3" H 5800 3442 50  0000 C CNN
+F 1 "AP2204R-3.3" H 5800 3351 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-89-3" H 5800 3425 50  0001 C CNN
+F 3 "https://www.diodes.com/assets/Datasheets/AP2204.pdf" H 5800 3200 50  0001 C CNN
+	1    5800 3200
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
