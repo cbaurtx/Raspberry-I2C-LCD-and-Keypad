@@ -16,5 +16,18 @@ RasPi pin | Keypad / LCD Signal|Description
 You can populate the PCB partially if only the LCD display or the keypad
 controller is needed.
 
+Blockdiagramm
+![Overview schematics](doc/Raspberry-I2C-LCD-and-Keypad.svg)
+
+Raspberry interface
+![Raspberry interface](doc/RasPiInterface.svg)
+
+Display:
+![Display controller](doc/DisplayController.svg)
+
+Keypad:
+![Keypad controller](doc/KeypadController.svg)
+
+
 Created using KiCAD 5.1.3
 Conceived using information from: https://5volt-junkie.net/i2c-keypad/  
